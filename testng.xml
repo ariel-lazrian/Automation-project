@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- it will run all the test in testng parallel-->
+
+<!--<suite name="Suite" parallel="tests">-->
+<!--parallel = "methods"-->
+<suite name="Suite" >
+
+	<listeners>
+		<listener class-name="academySite.Listeners"></listener>
+	</listeners>
+
+
+	<test name="Validating User Login">
+		<classes>
+			<class name="academySite.AcdaemySiteMainTest" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
